@@ -11,14 +11,14 @@ Find all the possible ways of arranging the letters A, B, and C.
 
 ### Implementation
 - Initializes an array `letters` with three elements: "A", "B", and "C". 
-- Write the `arrangeletters` method that takes the `letters`, to arranging the letters and printing the possible arrangements by using the backtracking algorithms.  
+- Write a method called `arrangeLetters` that takes the `letters` as input and uses backtracking algorithms to arrange the letters and print all possible arrangements.
 ```java
 public class Main {
     public static void main(String[] args) {
       /* add your code here */
     }
 
-    /* Write the `arrangeletters` method*/
+    /* Write the `arrangeletters` method */
 
 }
 ```
