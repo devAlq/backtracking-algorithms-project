@@ -1,7 +1,7 @@
 # Backtracking Algorithms Project
 
 ### Objective
-The project's main focus is a comprehensive understanding of the backtracking algorithms.
+In this project, our objective is to understand how to use the backtracking algorithm.
 
 ### Problem
 Find all the possible ways of arranging the letters A, B, and C.
