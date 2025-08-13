@@ -13,7 +13,14 @@ class Activity {
 class ActivitySelection {
     static char[] alphabet = {'A', 'B', 'C', 'D', 'E'};
 
-    
+    public static void printcode(double decimalStart, double decimalEnd, int count){
+        int hoursStart = (int) Math.floor(decimalStart);
+        int minutesStart = (int) ((decimalStart - hoursStart) * 60);
+
+        int hoursEnd = (int) Math.floor(decimalEnd);
+        int minuteEnd = (int) ((decimalEnd - hoursEnd) * 60);
+        System.out.println("- Activity " + alphabet[count] + ": "+ hoursStart +":"+ minutesStart + " - "+ hoursEnd+":"+minuteEnd);
+    }
     public static void selectActivities(Activity[] activities) {
         Arrays.sort(activities, Comparator.comparingDouble(a -> a.end));
         System.out.println("Selected activities:");
@@ -23,6 +30,7 @@ class ActivitySelection {
         for (Activity activity : activities) {
             if (activity.start >= lastEndTime) {
                 if(activity.start - Math.floor(activity.start) != 0){
+                    printcode(activity.start, activity.end, count);
                 }else{
                 System.out.println("- Activity " +alphabet[count] +": "+ activity.start + " - " + activity.end);
                 lastEndTime = activity.end;
